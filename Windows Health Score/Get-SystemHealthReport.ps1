@@ -61,7 +61,7 @@ $report = [PSCustomObject]@{
     StabilityIndex         = [double]$rel.SystemStabilityIndex
 
     # cast these four to integers
-    UptimeDays             = [int]((Get-Date) - $lastBoot).TotalDays
+    UptimeDays             = [int]$uptimeDays
     UnexpectedShutdowns30d = [int]$shutdowns30d
     CriticalSysEvents30d   = [int]$critSys
     CriticalAppEvents30d   = [int]$critApp
