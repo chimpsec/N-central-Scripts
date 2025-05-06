@@ -78,7 +78,7 @@ $outBaseScore = $report.BaseScore
 $outStabilityIndex = $report.StabilityIndex
 $outUptimeDays = $report.UptimeDays
 $outUnexpectedShutdowns = $report.UnexpectedShutdowns30d
-$outCriticalSysEvents = $vCriticalSysEvents30d
+$outCriticalSysEvents = $report.CriticalSysEvents30d
 $outCriticalAppEvents = $report.CriticalAppEvents30d
 
 # Output the detailed report
