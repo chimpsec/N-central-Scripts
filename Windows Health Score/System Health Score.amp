@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="a91981f3-20e4-45f2-a203-ef29d2f99323" Name="System Health Score" Description="VGhpcyBzY3JpcHQgcGVyZm9ybXMgYSBmdWxsIFdpblNBVCBmb3JtYWwgYXNzZXNzbWVudCwgcmV0cmlldmVzIHRoZSBsYXRlc3QgcGVyZm9ybWFuY2Ugc2NvcmVzIChDUFUsIE1lbW9yeSwgR3JhcGhpY3MsIEQzRCwgRGlzaywgQmFzZSksIGFuZCBjb2xsZWN0cyByZWxpYWJpbGl0eSBkYXRhIGluY2x1ZGluZyBzeXN0ZW0gdXB0aW1lLCB1bmV4cGVjdGVkIHNodXRkb3ducywgYW5kIGNyaXRpY2FsIGV2ZW50P2xvZyBlcnJvcnM=" Version="2.10.0.19" RemoteCategory="0" ExecutionType="Local" MinimumPSVersionRequired="0.0.0">
+  <Object ID="{4d5bf088-21d3-4ccd-9e79-5b514969b3d0}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml&gt;&lt;OutputParameters&gt;&lt;Parameter ParameterName=&quot;outCPUScore&quot; Label=&quot;CPUScore&quot; ParameterType=&quot;number&quot; Value=&quot;Run PowerShell Script.outCPUScore&quot; /&gt;&lt;Parameter ParameterName=&quot;outMemoryScore&quot; Label=&quot;MemoryScore&quot; ParameterType=&quot;number&quot; Value=&quot;Run PowerShell Script.outMemoryScore&quot; /&gt;&lt;Parameter ParameterName=&quot;outDiskScore&quot; Label=&quot;DiskScore&quot; ParameterType=&quot;number&quot; Value=&quot;Run PowerShell Script.outDiskScore&quot; /&gt;&lt;Parameter ParameterName=&quot;outBaseScore&quot; Label=&quot;BaseScore&quot; ParameterType=&quot;number&quot; Value=&quot;Run PowerShell Script.outBaseScore&quot; /&gt;&lt;Parameter ParameterName=&quot;outStabilityIndex&quot; Label=&quot;StabilityIndex&quot; ParameterType=&quot;number&quot; Value=&quot;Run PowerShell Script.outStabilityIndex&quot; /&gt;&lt;Parameter ParameterName=&quot;outUptimeDays&quot; Label=&quot;UptimeDays&quot; ParameterType=&quot;number&quot; Value=&quot;Run PowerShell Script.outUptimeDays&quot; /&gt;&lt;Parameter ParameterName=&quot;outUnexpectedShutdowns&quot; Label=&quot;UnexpectedShutdowns&quot; ParameterType=&quot;number&quot; Value=&quot;Run PowerShell Script.outUnexpectedShutdowns&quot; /&gt;&lt;Parameter ParameterName=&quot;outCriticalSysEvents&quot; Label=&quot;CriticalSysEvents&quot; ParameterType=&quot;number&quot; Value=&quot;Run PowerShell Script.outCriticalSysEvents&quot; /&gt;&lt;Parameter ParameterName=&quot;outCriticalAppEvents&quot; Label=&quot;CriticalAppEvents&quot; ParameterType=&quot;number&quot; Value=&quot;Run PowerShell Script.outCriticalAppEvents&quot; /&gt;&lt;Parameter ParameterName=&quot;outThreeDScore&quot; Label=&quot;ThreeDScore&quot; ParameterType=&quot;number&quot; Value=&quot;Run PowerShell Script.outThreeDScore&quot; /&gt;&lt;Parameter ParameterName=&quot;outGraphicsScore&quot; Label=&quot;GraphicsScore&quot; ParameterType=&quot;number&quot; Value=&quot;Run PowerShell Script.GraphicsScore&quot; /&gt;&lt;/OutputParameters&gt;&lt;/xml&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d24de4aa-02d5-421b-963e-67b7e5624d2e.outCPUScore</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>outCPUScore</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d24de4aa-02d5-421b-963e-67b7e5624d2e.outMemoryScore</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>outMemoryScore</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d24de4aa-02d5-421b-963e-67b7e5624d2e.outDiskScore</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>outDiskScore</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d24de4aa-02d5-421b-963e-67b7e5624d2e.outBaseScore</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>outBaseScore</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d24de4aa-02d5-421b-963e-67b7e5624d2e.outStabilityIndex</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>outStabilityIndex</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d24de4aa-02d5-421b-963e-67b7e5624d2e.outUptimeDays</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>outUptimeDays</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d24de4aa-02d5-421b-963e-67b7e5624d2e.outUnexpectedShutdowns</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>outUnexpectedShutdowns</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d24de4aa-02d5-421b-963e-67b7e5624d2e.outCriticalSysEvents</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>outCriticalSysEvents</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d24de4aa-02d5-421b-963e-67b7e5624d2e.outCriticalAppEvents</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>outCriticalAppEvents</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d24de4aa-02d5-421b-963e-67b7e5624d2e.outThreeDScore</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>outThreeDScore</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d24de4aa-02d5-421b-963e-67b7e5624d2e.outGraphicsScore</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>outGraphicsScore</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+    </hashset>
+  </LinkManager>
+  <Diagnostics OriginalVersion="2.98.0.3" />
+  <Activity mc:Ignorable="sads sap" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>504,745</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy Builder" sap:VirtualizedContainerService.HintSize="504,745" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:RunPowerShellScript AssemblyName="PolicyExecutionEngine, Version=2.98.0.3, Culture=neutral, PublicKeyToken=null" DisplayName="Run PowerShell Script" sap:VirtualizedContainerService.HintSize="468,522" Moniker="d24de4aa-02d5-421b-963e-67b7e5624d2e" OutPut_64="[RunPowerShellScript_OutPut_64]" Result="[RunPowerShellScript_Result]" ResultString="[RunPowerShellScript_ResultString]" Results_x64="[RunPowerShellScript_Results_x64]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="RunPowerShellScript" genArgEvent="a5e62517-e47b-44d9-bd5e-c64aef45244b" m_bTextLinkChange="False" script="PAAjAA0ACgAuAFMAWQBOAE8AUABTAEkAUwANAAoAIAAgACAAIABSAHUAbgBzACAAdABoAGUAIABXAGkAbgBkAG8AdwBzACAAUwB5AHMAdABlAG0AIABBAHMAcwBlAHMAcwBtAGUAbgB0ACAAVABvAG8AbAAgACgAVwBpAG4AUwBBAFQAKQAgAGEAbgBkACAAZwBhAHQAaABlAHIAcwAgAHMAeQBzAHQAZQBtACAAcgBlAGwAaQBhAGIAaQBsAGkAdAB5ACAAYQBuAGQAIABzAHQAYQBiAGkAbABpAHQAeQAgAG0AZQB0AHIAaQBjAHMALgANAAoADQAKAC4ARABFAFMAQwBSAEkAUABUAEkATwBOAA0ACgAgACAAIAAgAFQAaABpAHMAIABzAGMAcgBpAHAAdAAgAHAAZQByAGYAbwByAG0AcwAgAGEAIABmAHUAbABsACAAVwBpAG4AUwBBAFQAIABmAG8AcgBtAGEAbAAgAGEAcwBzAGUAcwBzAG0AZQBuAHQALAAgAHIAZQB0AHIAaQBlAHYAZQBzACAAdABoAGUAIABsAGEAdABlAHMAdAAgAHAAZQByAGYAbwByAG0AYQBuAGMAZQAgAHMAYwBvAHIAZQBzAA0ACgAgACAAIAAgACgAQwBQAFUALAAgAE0AZQBtAG8AcgB5ACwAIABHAHIAYQBwAGgAaQBjAHMALAAgAEQAMwBEACwAIABEAGkAcwBrACwAIABCAGEAcwBlACkALAAgAGEAbgBkACAAYwBvAGwAbABlAGMAdABzACAAcgBlAGwAaQBhAGIAaQBsAGkAdAB5ACAAZABhAHQAYQAgAGkAbgBjAGwAdQBkAGkAbgBnACAAcwB5AHMAdABlAG0AIAB1AHAAdABpAG0AZQAsAA0ACgAgACAAIAAgAHUAbgBlAHgAcABlAGMAdABlAGQAIABzAGgAdQB0AGQAbwB3AG4AcwAsACAAYQBuAGQAIABjAHIAaQB0AGkAYwBhAGwAIABlAHYAZQBuAHQAECBsAG8AZwAgAGUAcgByAG8AcgBzACAAbwB2AGUAcgAgAHQAaABlACAAcABhAHMAdAAgADMAMAAgAGQAYQB5AHMALgAgAE8AdQB0AHAAdQB0AHMAIABhACAAUABTAEMAdQBzAHQAbwBtAE8AYgBqAGUAYwB0AA0ACgAgACAAIAAgAHMAdQBtAG0AYQByAGkAegBpAG4AZwAgAGEAbABsACAAYwBvAGwAbABlAGMAdABlAGQAIABkAGEAdABhACAAZgBvAHIAIABlAGEAcwB5ACAAcgBlAHAAbwByAHQAaQBuAGcAIABvAHIAIABmAHUAcgB0AGgAZQByACAAcAByAG8AYwBlAHMAcwBpAG4AZwAuAA0ACgANAAoALgBQAEEAUgBBAE0ARQBUAEUAUgAgAE4AbwBuAGUADQAKACAAIAAgACAAVABoAGkAcwAgAHMAYwByAGkAcAB0ACAAZABvAGUAcwAgAG4AbwB0ACAAYQBjAGMAZQBwAHQAIABwAGEAcgBhAG0AZQB0AGUAcgBzAC4AIABTAGkAbQBwAGwAeQAgAHIAdQBuACAAaQB0ACAAaQBuACAAYQBuACAAZQBsAGUAdgBhAHQAZQBkACAAUABvAHcAZQByAFMAaABlAGwAbAAgAHMAZQBzAHMAaQBvAG4ALgANAAoADQAKAC4ARQBYAEEATQBQAEwARQANAAoAIAAgACAAIABQAFMAPgAgAC4AXABHAGUAdAAtAFMAeQBzAHQAZQBtAEgAZQBhAGwAdABoAFIAZQBwAG8AcgB0AC4AcABzADEADQAKACAAIAAgACAAUgB1AG4AcwAgAHQAaABlACAAZgB1AGwAbAAgAGEAcwBzAGUAcwBzAG0AZQBuAHQAIABhAG4AZAAgAG8AdQB0AHAAdQB0AHMAIABhACAAcgBlAHAAbwByAHQAIABvAGIAagBlAGMAdAAgAHcAaQB0AGgAIABwAGUAcgBmAG8AcgBtAGEAbgBjAGUAIABhAG4AZAAgAHMAdABhAGIAaQBsAGkAdAB5ACAAbQBlAHQAcgBpAGMAcwAuAA0ACgANAAoALgBOAE8AVABFAFMADQAKACAAIAAgACAARgBpAGwAZQAgAE4AYQBtAGUAIAAgADoAIABHAGUAdAAtAFMAeQBzAHQAZQBtAEgAZQBhAGwAdABoAFIAZQBwAG8AcgB0AC4AcABzADEADQAKACAAIAAgACAAQQB1AHQAaABvAHIAIAAgACAAIAAgADoAIABaAGEAYwBoACAARgByAGEAegBpAGUAcgANAAoAIAAgACAAIABDAHIAZQBhAHQAZQBkACAAIAAgACAAOgAgADIAMAAyADUALQAwADUALQAwADUADQAKACAAIAAgACAAUgBlAHYAaQBzAGkAbwBuACAAIAAgADoAIAAxAC4AMAANAAoAIAAgACAAIABSAGUAcQB1AGkAcgBlAHMAIAAgACAAOgAgAFcAaQBuAGQAbwB3AHMAIABQAG8AdwBlAHIAUwBoAGUAbABsACAANQAuADEAIABvAHIAIABsAGEAdABlAHIALAAgAFcAaQBuAFMAQQBUACAAZgBlAGEAdAB1AHIAZQAgAGEAdgBhAGkAbABhAGIAbABlAA0ACgAjAD4ADQAKAA0ACgANAAoAIwAgAFIAdQBuACAAdABoAGUAIABmAHUAbABsACAAVwBpAG4AUwBBAFQAIABhAHMAcwBlAHMAcwBtAGUAbgB0AA0ACgBXAHIAaQB0AGUALQBIAG8AcwB0ACAAIgBSAHUAbgBuAGkAbgBnACAAVwBpAG4AUwBBAFQAIABGAG8AcgBtAGEAbAAgAGEAcwBzAGUAcwBzAG0AZQBuAHQALgAuAC4AIgAgAC0ARgBvAHIAZQBnAHIAbwB1AG4AZABDAG8AbABvAHIAIABDAHkAYQBuAA0ACgBTAHQAYQByAHQALQBQAHIAbwBjAGUAcwBzACAAdwBpAG4AcwBhAHQAIAAtAEEAcgBnAHUAbQBlAG4AdABMAGkAcwB0ACAAZgBvAHIAbQBhAGwAIAAtAFcAaQBuAGQAbwB3AFMAdAB5AGwAZQAgAEgAaQBkAGQAZQBuACAALQBXAGEAaQB0AA0ACgANAAoAIwAgAEcAcgBhAGIAIAB0AGgAZQAgAGwAYQB0AGUAcwB0ACAAVwBpAG4AUwBBAFQAIABzAGMAbwByAGUAcwANAAoAJAB3AHMAIAA9ACAARwBlAHQALQBDAGkAbQBJAG4AcwB0AGEAbgBjAGUAIAAtAEMAbABhAHMAcwBOAGEAbQBlACAAVwBpAG4AMwAyAF8AVwBpAG4AUwBhAHQADQAKAA0ACgAjACAAUgBlAGwAaQBhAGIAaQBsAGkAdAB5ACAAKABTAHQAYQBiAGkAbABpAHQAeQApACAASQBuAGQAZQB4AA0ACgAkAHIAZQBsACAAPQAgAEcAZQB0AC0AQwBpAG0ASQBuAHMAdABhAG4AYwBlACAALQBDAGwAYQBzAHMATgBhAG0AZQAgAFcAaQBuADMAMgBfAFIAZQBsAGkAYQBiAGkAbABpAHQAeQBTAHQAYQBiAGkAbABpAHQAeQBNAGUAdAByAGkAYwBzACAAfAAgAFMAbwByAHQALQBPAGIAagBlAGMAdAAgAFQAaQBtAGUARwBlAG4AZQByAGEAdABlAGQAIAAtAEQAZQBzAGMAZQBuAGQAaQBuAGcAIAB8ACAAUwBlAGwAZQBjAHQALQBPAGIAagBlAGMAdAAgAC0ARgBpAHIAcwB0ACAAMQANAAoADQAKACMAIABVAHAAdABpAG0AZQAgACYAIAB1AG4AZQB4AHAAZQBjAHQAZQBkACAAcwBoAHUAdABkAG8AdwBuAHMADQAKACQAbwBzACAAPQAgAEcAZQB0AC0AQwBpAG0ASQBuAHMAdABhAG4AYwBlACAAVwBpAG4AMwAyAF8ATwBwAGUAcgBhAHQAaQBuAGcAUwB5AHMAdABlAG0ADQAKACQAbABhAHMAdABCAG8AbwB0ACAAPQAgACQAbwBzAC4ATABhAHMAdABCAG8AbwB0AFUAcABUAGkAbQBlAA0ACgAkAHUAcAB0AGkAbQBlAEQAYQB5AHMAIAA9ACAAKAAoAEcAZQB0AC0ARABhAHQAZQApACAALQAgACQAbABhAHMAdABCAG8AbwB0ACkALgBUAG8AdABhAGwARABhAHkAcwANAAoAJABzAGgAdQB0AGQAbwB3AG4AcwAzADAAZAAgAD0AIAAoAEcAZQB0AC0AVwBpAG4ARQB2AGUAbgB0ACAALQBGAGkAbAB0AGUAcgBIAGEAcwBoAHQAYQBiAGwAZQAgAEAAewANAAoAIAAgACAAIAAgACAAIAAgAEwAbwBnAE4AYQBtAGUAIAAgACAAPQAgACcAUwB5AHMAdABlAG0AJwANAAoAIAAgACAAIAAgACAAIAAgAEkAZAAgACAAIAAgACAAIAAgACAAPQAgADQAMQANAAoAIAAgACAAIAAgACAAIAAgAFMAdABhAHIAdABUAGkAbQBlACAAPQAgACgARwBlAHQALQBEAGEAdABlACkALgBBAGQAZABEAGEAeQBzACgALQAzADAAKQANAAoAIAAgACAAIAB9ACAALQBFAHIAcgBvAHIAQQBjAHQAaQBvAG4AIABTAGkAbABlAG4AdABsAHkAQwBvAG4AdABpAG4AdQBlACkALgBDAG8AdQBuAHQADQAKAA0ACgAjACAARQB2AGUAbgB0ABEgTABvAGcAIABjAHIAaQB0AGkAYwBhAGwAcwAgAGwAYQBzAHQAIAAzADAAZAANAAoAJABzAGkAbgBjAGUAIAA9ACAAKABHAGUAdAAtAEQAYQB0AGUAKQAuAEEAZABkAEQAYQB5AHMAKAAtADMAMAApAA0ACgAkAGMAcgBpAHQAUwB5AHMAIAA9ACAAKABHAGUAdAAtAFcAaQBuAEUAdgBlAG4AdAAgAC0ARgBpAGwAdABlAHIASABhAHMAaAB0AGEAYgBsAGUAIABAAHsAIABMAG8AZwBOAGEAbQBlACAAPQAgACcAUwB5AHMAdABlAG0AJwA7ACAATABlAHYAZQBsACAAPQAgADEAOwAgAFMAdABhAHIAdABUAGkAbQBlACAAPQAgACQAcwBpAG4AYwBlACAAfQAgAC0ARQByAHIAbwByAEEAYwB0AGkAbwBuACAAUwBpAGwAZQBuAHQAbAB5AEMAbwBuAHQAaQBuAHUAZQApAC4AQwBvAHUAbgB0AA0ACgAkAGMAcgBpAHQAQQBwAHAAIAA9ACAAKABHAGUAdAAtAFcAaQBuAEUAdgBlAG4AdAAgAC0ARgBpAGwAdABlAHIASABhAHMAaAB0AGEAYgBsAGUAIABAAHsAIABMAG8AZwBOAGEAbQBlACAAPQAgACcAQQBwAHAAbABpAGMAYQB0AGkAbwBuACcAOwAgAEwAZQB2AGUAbAAgAD0AIAAxADsAIABTAHQAYQByAHQAVABpAG0AZQAgAD0AIAAkAHMAaQBuAGMAZQAgAH0AIAAtAEUAcgByAG8AcgBBAGMAdABpAG8AbgAgAFMAaQBsAGUAbgB0AGwAeQBDAG8AbgB0AGkAbgB1AGUAKQAuAEMAbwB1AG4AdAANAAoADQAKACMAIABCAHUAaQBsAGQAIAByAGUAcABvAHIAdAAgAG8AYgBqAGUAYwB0ACAAdwBpAHQAaAAgAGkAbgBkAGkAdgBpAGQAdQBhAGwAIABXAGkAbgBTAEEAVAAgAHMAYwBvAHIAZQBzAA0ACgAkAHIAZQBwAG8AcgB0ACAAPQAgAFsAUABTAEMAdQBzAHQAbwBtAE8AYgBqAGUAYwB0AF0AQAB7AA0ACgAgACAAIAAgACMAIABjAGEAcwB0ACAAdABoAGUAcwBlACAAdABvACAAZABvAHUAYgBsAGUAcwAgACgAZABlAGMAaQBtAGEAbAAgAHQAeQBwAGUAKQANAAoAIAAgACAAIABDAFAAVQBTAGMAbwByAGUAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAPQAgAFsAZABvAHUAYgBsAGUAXQAkAHcAcwAuAEMAUABVAFMAYwBvAHIAZQANAAoAIAAgACAAIABNAGUAbQBvAHIAeQBTAGMAbwByAGUAIAAgACAAIAAgACAAIAAgACAAIAAgACAAPQAgAFsAZABvAHUAYgBsAGUAXQAkAHcAcwAuAE0AZQBtAG8AcgB5AFMAYwBvAHIAZQANAAoAIAAgACAAIABHAHIAYQBwAGgAaQBjAHMAUwBjAG8AcgBlACAAIAAgACAAIAAgACAAIAAgACAAPQAgAFsAZABvAHUAYgBsAGUAXQAkAHcAcwAuAEcAcgBhAHAAaABpAGMAcwBTAGMAbwByAGUADQAKACAAIAAgACAARAAzAEQAUwBjAG8AcgBlACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgAD0AIABbAGQAbwB1AGIAbABlAF0AJAB3AHMALgBEADMARABTAGMAbwByAGUADQAKACAAIAAgACAARABpAHMAawBTAGMAbwByAGUAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgAD0AIABbAGQAbwB1AGIAbABlAF0AJAB3AHMALgBEAGkAcwBrAFMAYwBvAHIAZQANAAoAIAAgACAAIABCAGEAcwBlAFMAYwBvAHIAZQAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAPQAgAFsAZABvAHUAYgBsAGUAXQAkAHcAcwAuAFcAaQBuAFMAUABSAEwAZQB2AGUAbAANAAoAIAAgACAAIABTAHQAYQBiAGkAbABpAHQAeQBJAG4AZABlAHgAIAAgACAAIAAgACAAIAAgACAAPQAgAFsAZABvAHUAYgBsAGUAXQAkAHIAZQBsAC4AUwB5AHMAdABlAG0AUwB0AGEAYgBpAGwAaQB0AHkASQBuAGQAZQB4AA0ACgANAAoAIAAgACAAIAAjACAAYwBhAHMAdAAgAHQAaABlAHMAZQAgAGYAbwB1AHIAIAB0AG8AIABpAG4AdABlAGcAZQByAHMADQAKACAAIAAgACAAVQBwAHQAaQBtAGUARABhAHkAcwAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgAD0AIABbAGkAbgB0AF0AKAAoAEcAZQB0AC0ARABhAHQAZQApACAALQAgACQAbABhAHMAdABCAG8AbwB0ACkALgBUAG8AdABhAGwARABhAHkAcwANAAoAIAAgACAAIABVAG4AZQB4AHAAZQBjAHQAZQBkAFMAaAB1AHQAZABvAHcAbgBzADMAMABkACAAPQAgAFsAaQBuAHQAXQAkAHMAaAB1AHQAZABvAHcAbgBzADMAMABkAA0ACgAgACAAIAAgAEMAcgBpAHQAaQBjAGEAbABTAHkAcwBFAHYAZQBuAHQAcwAzADAAZAAgACAAIAA9ACAAWwBpAG4AdABdACQAYwByAGkAdABTAHkAcwANAAoAIAAgACAAIABDAHIAaQB0AGkAYwBhAGwAQQBwAHAARQB2AGUAbgB0AHMAMwAwAGQAIAAgACAAPQAgAFsAaQBuAHQAXQAkAGMAcgBpAHQAQQBwAHAADQAKAH0ADQAKAA0ACgANAAoAIwAgAE8AdQB0AHAAdQB0ACAAUABhAHIAYQBtAHMAIABmAG8AcgAgAE4ALQBjAGUAbgB0AHIAYQBsACAAQQBNAFAADQAKACQAbwB1AHQAQwBQAFUAUwBjAG8AcgBlACAAPQAgACQAcgBlAHAAbwByAHQALgBDAFAAVQBTAGMAbwByAGUADQAKACQAbwB1AHQATQBlAG0AbwByAHkAUwBjAG8AcgBlACAAPQAgACQAcgBlAHAAbwByAHQALgBNAGUAbQBvAHIAeQBTAGMAbwByAGUADQAKACQAbwB1AHQARwByAGEAcABoAGkAYwBzAFMAYwBvAHIAZQAgAD0AIAAkAHIAZQBwAG8AcgB0AC4ARwByAGEAcABoAGkAYwBzAFMAYwBvAHIAZQANAAoAJABvAHUAdABUAGgAcgBlAGUARABTAGMAbwByAGUAIAA9ACAAJAByAGUAcABvAHIAdAAuAEQAMwBEAFMAYwBvAHIAZQANAAoAJABvAHUAdABEAGkAcwBrAFMAYwBvAHIAZQAgAD0AIAAkAHIAZQBwAG8AcgB0AC4ARABpAHMAawBTAGMAbwByAGUADQAKACQAbwB1AHQAQgBhAHMAZQBTAGMAbwByAGUAIAA9ACAAJAByAGUAcABvAHIAdAAuAEIAYQBzAGUAUwBjAG8AcgBlAA0ACgAkAG8AdQB0AFMAdABhAGIAaQBsAGkAdAB5AEkAbgBkAGUAeAAgAD0AIAAkAHIAZQBwAG8AcgB0AC4AUwB0AGEAYgBpAGwAaQB0AHkASQBuAGQAZQB4AA0ACgAkAG8AdQB0AFUAcAB0AGkAbQBlAEQAYQB5AHMAIAA9ACAAJAByAGUAcABvAHIAdAAuAFUAcAB0AGkAbQBlAEQAYQB5AHMADQAKACQAbwB1AHQAVQBuAGUAeABwAGUAYwB0AGUAZABTAGgAdQB0AGQAbwB3AG4AcwAgAD0AIAAkAHIAZQBwAG8AcgB0AC4AVQBuAGUAeABwAGUAYwB0AGUAZABTAGgAdQB0AGQAbwB3AG4AcwAzADAAZAANAAoAJABvAHUAdABDAHIAaQB0AGkAYwBhAGwAUwB5AHMARQB2AGUAbgB0AHMAIAA9ACAAJAB2AEMAcgBpAHQAaQBjAGEAbABTAHkAcwBFAHYAZQBuAHQAcwAzADAAZAANAAoAJABvAHUAdABDAHIAaQB0AGkAYwBhAGwAQQBwAHAARQB2AGUAbgB0AHMAIAA9ACAAJAByAGUAcABvAHIAdAAuAEMAcgBpAHQAaQBjAGEAbABBAHAAcABFAHYAZQBuAHQAcwAzADAAZAANAAoADQAKACMAIABPAHUAdABwAHUAdAAgAHQAaABlACAAZABlAHQAYQBpAGwAZQBkACAAcgBlAHAAbwByAHQADQAKACQAcgBlAHAAbwByAHQA">
+          <p:RunPowerShellScript.InArgs>
+            <scg:Dictionary x:TypeArguments="x:String, p:InArg" />
+          </p:RunPowerShellScript.InArgs>
+          <p:RunPowerShellScript.OutArgs>
+            <p:OutArg x:Key="outCPUScore" ArgType="number" DisplayName="outCPUScore" Name="outCPUScore">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:Double">[RunPowerShellScript_outCPUScore]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="outMemoryScore" ArgType="number" DisplayName="outMemoryScore" Name="outMemoryScore">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:Double">[RunPowerShellScript_outMemoryScore]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="outGraphicsScore" ArgType="number" DisplayName="GraphicsScore" Name="outGraphicsScore">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:Double">[RunPowerShellScript_outGraphicsScore]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="outThreeDScore" ArgType="number" DisplayName="outThreeDScore" Name="outThreeDScore">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:Double">[RunPowerShellScript_outThreeDScore]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="outDiskScore" ArgType="number" DisplayName="outDiskScore" Name="outDiskScore">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:Double">[RunPowerShellScript_outDiskScore]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="outBaseScore" ArgType="number" DisplayName="outBaseScore" Name="outBaseScore">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:Double">[RunPowerShellScript_outBaseScore]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="outStabilityIndex" ArgType="number" DisplayName="outStabilityIndex" Name="outStabilityIndex">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:Double">[RunPowerShellScript_outStabilityIndex]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="outUptimeDays" ArgType="number" DisplayName="outUptimeDays" Name="outUptimeDays">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:Double">[RunPowerShellScript_outUptimeDays]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="outUnexpectedShutdowns" ArgType="number" DisplayName="outUnexpectedShutdowns" Name="outUnexpectedShutdowns">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:Double">[RunPowerShellScript_outUnexpectedShutdowns]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="outCriticalSysEvents" ArgType="number" DisplayName="outCriticalSysEvents" Name="outCriticalSysEvents">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:Double">[RunPowerShellScript_outCriticalSysEvents]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="outCriticalAppEvents" ArgType="number" DisplayName="outCriticalAppEvents" Name="outCriticalAppEvents">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:Double">[RunPowerShellScript_outCriticalAppEvents]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+          </p:RunPowerShellScript.OutArgs>
+        </p:RunPowerShellScript>
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_OutPut_64" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_ResultString" />
+        <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="RunPowerShellScript_Results_x64" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_Result" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_outCPUScore" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_outMemoryScore" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_outDiskScore" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_outBaseScore" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_outStabilityIndex" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_outUptimeDays" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_outUnexpectedShutdowns" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_outCriticalSysEvents" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_outCriticalAppEvents" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_outThreeDScore" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_outGraphicsScore" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>
